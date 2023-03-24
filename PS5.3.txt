@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include<string.h>
+struct student{
+    int roll_no;
+    char name[30];
+    char branch[40];
+    char batch;
+};
+struct student s, *ptr;
+int main() {
+    ptr = &s;
+    printf("enter the roll number of the student \n");
+    scanf("%d",&ptr->roll_no);
+    printf("enter the name of the student\n");
+    scanf("%s",&ptr->name);
+    printf("enter branch of student\n");
+    scanf("%s",&ptr->branch);
+    printf("enter batch of the student \n");
+    scanf("%d",&ptr->batch);
+    printf("\n stdent details are:\n");
+    printf("roll no:%d\n",ptr->roll_no);
+    printf("name:%s\n",ptr->name);
+    printf("branch:%s\n",ptr->branch);
+    printf("batch:%d\n",ptr->batch);
+    return 0;
+} 
+
+
+output:
+     enter the roll number of the student 
+123456
+enter the name of the student
+vijay
+enter branch of student
+cse
+enter batch of the student 
+02
+stdent details are:
+roll no:123456
+name:vijay
+branch:cse
+batch:02
