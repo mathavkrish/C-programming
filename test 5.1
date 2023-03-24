@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+int main() 
+{
+    char a[50];
+    char *x;
+    int vow=0;
+    int con=0;
+    printf("enter the word :");
+    scanf("%s",&a[50]);
+    x=&a;
+    while (*x!=0)
+    {
+        if (*x=='a'|*x=='e'|*x=='i'|*x=='o'|*x=='u'|*x=='A'|*x=='E'|*x=='I'|*x=='O'|*x=='U')
+        {
+            vow++;
+        }
+        else 
+        {
+            con++;
+        }
+    
+    
+    }
+    printf("vowels :%d\n",vow);
+     printf("consonants :%d\n",con);
+    
+    
+   
+
+    return 0;
+}
